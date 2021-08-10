@@ -1,0 +1,111 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 600;
+}
+.link_project{
+    text-decoration: underline;
+}
+li {
+    font-weight: 500;
+}
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+header {
+    grid-area: hd;
+display: flex;
+justify-content: center;
+background-color: #4afbb9;
+}
+main {
+    grid-area: main;
+
+}
+aside {
+    border-left: 1px solid grey;
+    grid-area: sd;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+footer {
+    grid-area: ft;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "hd hd hd hd  hd  hd hd hd hd "
+        ". main main main main main sd sd sd"
+        ". ft ft ft   ft   ft   ft   ft   ft";
+}
+.title_block_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.position_vacancy {
+    margin-top: 0;
+    font-weight: normal;
+}
+.title_xp,
+.title_detail,
+.title_link,
+.title_language,
+.title_courses_block,
+.title_edecetion_block {
+ color: black;   
+}
+.project_list{
+    color: rgb(49, 49, 49);
+}
+.project_list :not(:nth-child(odd)) {
+    margin: 15px 0;
+}
+.skills_list :not(:first-child) {
+    margin-top: 15px;
+}
+.data {
+    color: inherit;
+    font-size: 17px;
+    font-weight: 800;
+    margin-right: 15px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.para_key_p{
+    font-weight: 600;
+}
+.key_p{
+    color: rgba(0, 0, 0, 0.89);
+    font-weight: 700;
+    margin-top: 5px;
+}
+.text{
+    font-weight: normal;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Layer_1{
+    width: 50px;
+    height: 30px;
+}
