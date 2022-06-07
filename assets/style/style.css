@@ -76,6 +76,14 @@ footer {
 .skills_list :not(:first-child) {
     margin-top: 15px;
 }
+.skills_list--sub-list :first-child{
+    margin-top: 20px;
+}
+.skils_list--sub-list__title{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
 .data {
     color: inherit;
     font-size: 17px;
